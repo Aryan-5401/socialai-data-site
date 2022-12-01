@@ -21,7 +21,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Material Design Lite</title>
+    <title>Persuasion Strategies for Multiplayer Social Deduction Games</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -29,8 +29,8 @@
 
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <zmeta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Persuasion Strategies for Multiplayer Social Deduction Games">
     <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
 
     <!-- Tile icon for Win8 (144x144 + tile color) -->
@@ -44,9 +44,25 @@
     <link rel="canonical" href="http://www.example.com/">
     -->
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <style>
+      html * {
+        font-family: "PT Sans", Calibri, Tahoma, sans-serif;
+      }
+    </style>
+    <style>
+    .demo-card-image {
+      width: 75%;
+      height: 75%;
+      display: block;
+      margin: 30px auto auto;
+      background: url('images/teaser.png') no-repeat;
+      background-size: contain;
+    }
+    </style>
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">-->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Playfair+Display" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-red.min.css">
     <link rel="stylesheet" href="styles.css">
     <style>
     #view-source {
@@ -59,127 +75,204 @@
       z-index: 900;
     }
     </style>
+
   </head>
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-        </div>
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-          <h3>Name &amp; Title</h3>
-        </div>
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-        </div>
-        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-          <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
-          <a href="#features" class="mdl-layout__tab">Features</a>
-          <a href="#features" class="mdl-layout__tab">Details</a>
-          <a href="#features" class="mdl-layout__tab">Technology</a>
-          <a href="#features" class="mdl-layout__tab">FAQ</a>
-          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
-            <i class="material-icons" role="presentation">add</i>
-            <span class="visuallyhidden">Add</span>
-          </button>
+      <header class="android-header mdl-layout__header mdl-layout__header--waterfall mdl-color--primary">
+<!--        <div class="mdl-layout&#45;&#45;large-screen-only mdl-layout__header-row">-->
+<!--        </div>-->
+<!--        <div class="mdl-layout&#45;&#45;large-screen-only mdl-layout__header-row">-->
+<!--          <h3>Name &amp; Title</h3>-->
+<!--        </div>-->
+<!--        <div class="mdl-layout&#45;&#45;large-screen-only mdl-layout__header-row">-->
+<!--        </div>-->
+        <div class="android-header-spacer mdl-layout-spacer"></div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark" style="display: flex; justify-content: space-around">
+          <a href="#overview" class="mdl-layout__tab is-active"><b>Overview</b></a>
+          <a href="#features" class="mdl-layout__tab"><b>Experiments</b></a>
+          <a href="#features" class="mdl-layout__tab"><b>Datasets</b></a>
+          <a href="#features" class="mdl-layout__tab"><b>Code & Models</b></a>
+          <a href="#features" class="mdl-layout__tab"><b>FAQ</b></a>
         </div>
       </header>
+<!--      <header class="android-header mdl-layout__header mdl-layout__header&#45;&#45;waterfall">-->
+<!--        <div class="mdl-layout__header-row">-->
+<!--          <span class="android-title mdl-layout-title">-->
+<!--            <img class="android-logo-image" src="images/android-desktop.png">-->
+<!--          </span>-->
+<!--          &lt;!&ndash; Add spacer, to align navigation to the right in desktop &ndash;&gt;-->
+<!--          <div class="android-header-spacer mdl-layout-spacer"></div>-->
+<!--          &lt;!&ndash; Navigation &ndash;&gt;-->
+<!--          <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color&#45;&#45;primary-dark">-->
+<!--            <a href="#overview" class="mdl-layout__tab is-active">Overview</a>-->
+<!--            <a href="#features" class="mdl-layout__tab">Features</a>-->
+<!--            <a href="#features" class="mdl-layout__tab">Details</a>-->
+<!--            <a href="#features" class="mdl-layout__tab">Technology</a>-->
+<!--            <a href="#features" class="mdl-layout__tab">FAQ</a>-->
+<!--            <button class="mdl-button mdl-js-button mdl-button&#45;&#45;fab mdl-js-ripple-effect mdl-button&#45;&#45;colored mdl-shadow&#45;&#45;4dp mdl-color&#45;&#45;accent" id="add">-->
+<!--              <i class="material-icons" role="presentation">add</i>-->
+<!--              <span class="visuallyhidden">Add</span>-->
+<!--            </button>-->
+<!--        </div>-->
+<!--          <span class="android-mobile-title mdl-layout-title">-->
+<!--            <img class="android-logo-image" src="images/android-desktop.png">-->
+<!--          </span>-->
+<!--          <button class="android-more-button mdl-button mdl-js-button mdl-button&#45;&#45;icon mdl-js-ripple-effect" id="more-button">-->
+<!--            <i class="material-icons">more_vert</i>-->
+<!--          </button>-->
+<!--          <ul class="mdl-menu mdl-js-menu mdl-menu&#45;&#45;bottom-right mdl-js-ripple-effect" for="more-button">-->
+<!--            <li class="mdl-menu__item">5.0 Lollipop</li>-->
+<!--            <li class="mdl-menu__item">4.4 KitKat</li>-->
+<!--            <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>-->
+<!--            <li class="mdl-menu__item">Android History</li>-->
+<!--          </ul>-->
+<!--        </div>-->
+<!--      </header>-->
+<!--      <div class="android-drawer mdl-layout__drawer">-->
+<!--        <nav class="mdl-navigation">-->
+<!--          <a class="mdl-navigation__link" href="">Phones</a>-->
+<!--          <a class="mdl-navigation__link" href="">Tablets</a>-->
+<!--          <a class="mdl-navigation__link" href="">Wear</a>-->
+<!--          <a class="mdl-navigation__link" href="">TV</a>-->
+<!--          <a class="mdl-navigation__link" href="">Auto</a>-->
+<!--          <a class="mdl-navigation__link" href="">One</a>-->
+<!--          <a class="mdl-navigation__link" href="">Play</a>-->
+<!--          <div class="android-drawer-separator"></div>-->
+<!--          <span class="mdl-navigation__link" href="">Versions</span>-->
+<!--          <a class="mdl-navigation__link" href="">Lollipop 5.0</a>-->
+<!--          <a class="mdl-navigation__link" href="">KitKat 4.4</a>-->
+<!--          <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>-->
+<!--          <a class="mdl-navigation__link" href="">Android history</a>-->
+<!--          <div class="android-drawer-separator"></div>-->
+<!--          <span class="mdl-navigation__link" href="">Resources</span>-->
+<!--          <a class="mdl-navigation__link" href="">Official blog</a>-->
+<!--          <a class="mdl-navigation__link" href="">Android on Google+</a>-->
+<!--          <a class="mdl-navigation__link" href="">Android on Twitter</a>-->
+<!--          <div class="android-drawer-separator"></div>-->
+<!--          <span class="mdl-navigation__link" href="">For developers</span>-->
+<!--          <a class="mdl-navigation__link" href="">App developer resources</a>-->
+<!--          <a class="mdl-navigation__link" href="">Android Open Source Project</a>-->
+<!--          <a class="mdl-navigation__link" href="">Android SDK</a>-->
+<!--        </nav>-->
+<!--      </div>-->
       <main class="mdl-layout__content">
         <div class="mdl-layout__tab-panel is-active" id="overview">
+          <div class="android-be-together-section mdl-typography--text-center">
+            <div class="logo-font android-slogan"> <b> Persuasion Strategies for Multiplayer Social Deduction Games </b></div>
+          <div class="logo-font android-sub-slogan"> <i>The first multimodal benchmark dataset for modeling persuasive behaviors during social deduction games.</i>  </div>
+          <div class="demo-card-image"></div>
+        </div>
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
               <i class="material-icons">play_circle_filled</i>
             </header>
             <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
               <div class="mdl-card__supporting-text">
-                <h4>Features</h4>
-                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse.
+                <h4>About</h4>
+                This project presents the first multimodal dataset for persuasion strategy modeling, composed of video captures and dialogue transcriptions and collected in natural social scenarios including intensive in-person conversations of multiple players engaged in social deduction games like <i>One Night Ultimate Werewolf</i>. The dataset is annotated with appropriate persuasion strategies for every utterance in every game dialog and the voting outcomes of each game as an evidence of human's belief. We also implement and present comprehensive experiments of persuasion strategy prediction and voting outcome deduction.
               </div>
               <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Read our features</a>
+                <a href="#" class="mdl-button">Watch Video</a>
+              </div>
+              <div class="mdl-card__actions">
+                <a href="#" class="mdl-button">Read The Paper</a>
               </div>
             </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
-              <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
-              <li class="mdl-menu__item">Lorem</li>
-              <li class="mdl-menu__item" disabled>Ipsum</li>
-              <li class="mdl-menu__item">Dolor</li>
-            </ul>
           </section>
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                <h4 class="mdl-cell mdl-cell--12-col">Details</h4>
+                <h4 class="mdl-cell mdl-cell--12-col">Data Sources</h4>
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
                   <div class="section__circle-container__circle mdl-color--primary"></div>
                 </div>
                 <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Lorem ipsum dolor sit amet</h5>
-                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
+                  We present two major sources of video captures of completed play-throughs of social deduction games in our dataset (all with explicit game outcomes and with the same game setup), based on which accurate corresponding dialogue transcriptions are created and also presented in our dataset:
+                  <ul class="ul_mdl_section">
+                    <li class="li_mdl_section"> <b>Ego4D</b>: A subset of the <a href="https://ego4d-data.org/">Ego4D Social dataset </a> captures the videos of a group of participants playing social deduction games. This subset contains 7.3 hours of videos with 40 games of One Night Ultimate Werewolf and 8 games of The Resistance: Avalon. We leverage only third-person videos from this dataset for transcription and experiments. </li>
+                    <li class="li_mdl_section"> <b>YouTube</b>: This subset captures 14.8 hours of 151 clips of completed games of One Night Ultimate Werewolf, extracted from publicly accessible YouTube videos with help of <a href="https://developers.google.com/youtube/v3">YouTube Data API V3</a>. We release the YouTube URL's for this subset of videos.</li>
+                  </ul>
                 </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--primary"></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Lorem ipsum dolor sit amet</h5>
-                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
-                </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--primary"></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Lorem ipsum dolor sit amet</h5>
-                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
-                </div>
-              </div>
-              <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Read our features</a>
               </div>
             </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn2">
-              <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn2">
-              <li class="mdl-menu__item">Lorem</li>
-              <li class="mdl-menu__item" disabled>Ipsum</li>
-              <li class="mdl-menu__item">Dolor</li>
-            </ul>
           </section>
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__supporting-text">
-                <h4>Technology</h4>
-                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse. Pariatur occaecat nisi laboris tempor laboris eiusmod qui id Lorem esse commodo in. Exercitation aute dolore deserunt culpa consequat elit labore incididunt elit anim.
-              </div>
-              <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Read our features</a>
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <h4 class="mdl-cell mdl-cell--12-col">Data Annotations</h4>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--primary"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  We present transcripts and comprehensive annotations for all completed games in our dataset applicable for a variety of tasks, most notably the tasks of persuasion strategy prediction and voting outcome deduction:
+                  <ul class="ul_mdl_section">
+                    <li class="li_mdl_section"> <b>Dialogue Transcripts</b> High-quality human-reviewed dialogue transcripts of group conversations are provided for every video capture of every completed game in our dataset. </li>
+                    <li class="li_mdl_section"> <b>Utterance-level Persuasion Strategies</b>: The dialogue transcripts in our dataset additionally come with annotations of identified persuasion strategies for every utterance, based on the following strategy taxonomies that we have defined for conversations in social deduction games:
+                      <ul class="ul_mdl_section" style="list-style: none">
+                        <li class="li_mdl_section"> <a><b>Identity Declaration</b></a>:<i> State one's own role or identity in the game</i>.</li>
+                        <li class="li_mdl_section"> <a><b>Accusation</b></a>:<i> Claim someone has a specific identity or strategic behavior</i>.</li>
+                        <li class="li_mdl_section"> <a><b>Interrogation</b></a>:<i> Questions about someone's identity or behavior</i>.</li>
+                        <li class="li_mdl_section"> <a><b>Call for Action</b></a>:<i> Encourage people to take an action during the game</i>.</li>
+                        <li class="li_mdl_section"> <a><b>Defense</b></a>:<i> Defending oneself or someone else against an accusation or defending a game-related argument</i>.</li>
+                        <li class="li_mdl_section"> <a><b>Evidence</b></a>:<i> Provide a body of game-related fact or information</i>.</li>
+                      </ul>
+                    </li>
+                    <li class="li_mdl_section"> <b>Game Dynamics</b>: Our dataset also presents game-related annotations for every completed game, including the starting role, ending role, and the voting outcome of every participating player in a game.</li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn3">
-              <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
-              <li class="mdl-menu__item">Lorem</li>
-              <li class="mdl-menu__item" disabled>Ipsum</li>
-              <li class="mdl-menu__item">Dolor</li>
-            </ul>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <h4 class="mdl-cell mdl-cell--12-col">Benchmarks</h4>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--primary"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <ul class="ul_mdl_section" style="list-style: none; padding-left: 0;">
+                    <li class="li_mdl_section"> <b>Persuasion Strategy Prediction</b>: To benchmark our dataset, we provide computational models trained on each subset of our dataset and comprehensive experimental results for the task of utterance-level prediction of persuasion strategies. We analyze the role of video modality and contextual cues when designing such models and provide additional results to show how different computational models generalize across different data sources and different games.</li>
+                    <li class="li_mdl_section"> <b>Game Outcome Deduction</b>: This task involves predicting the voting outcome of every player at the end of each game, for which we also provide baseline models trained on our dataset and corresponding experimental results.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </section>
           <section class="section--footer mdl-color--white mdl-grid">
-            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-              <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
-            </div>
-            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-              <h5>Lorem ipsum dolor sit amet</h5>
-              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
-            </div>
-            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-              <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
-            </div>
-            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-              <h5>Lorem ipsum dolor sit amet</h5>
-              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
-            </div>
-          </section>
+              <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+		<div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
+              </div>
+              <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+		<h4>Data Agreement</h4>
+
+<!--<pre class="language-markup">-->
+<!--  <code class="language-markup">“I will not use Multi-VALUE for malicious purposes including  not limited to):-->
+<!--    deception, impersonation, mockery, discrimination, hate speech, targeted harassment and cultural appropriation.-->
+
+<!--    In my use of this resource, I will respect the dignity and privacy of all people.”</code>-->
+<!--</pre>-->
+<it>
+</it>
+</div>
+<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+  <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
+</div>
+<div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+  <h4>How To Cite</h4>
+<!--<pre class="language-markup">-->
+<!--  <code class="language-markup">@inproceedings{ziems-etal-2022-multi-value,-->
+<!--    title = "Multi-VALUE: Evaluating Cross-dialectal NLP",-->
+<!--    author = "Ziems, Caleb  and-->
+<!--    Held, Will  and-->
+<!--    Dhamala, Jwala  and-->
+<!--    Gupta, Rahul  and-->
+<!--    Yang, Diyi"-->
+<!--    }</code>-->
+<!--</pre>-->
+</div>
+</section>
         </div>
         <div class="mdl-layout__tab-panel" id="features">
           <section class="section--center mdl-grid mdl-grid--no-spacing">
@@ -240,58 +333,58 @@
           <div class="mdl-mega-footer--middle-section">
             <div class="mdl-mega-footer--drop-down-section">
               <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Features</h1>
+              <h1 class="mdl-mega-footer--heading">Team</h1>
               <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Updates</a></li>
+                <li><a href="#">Bolin Lai</a></li>
+                <li><a href="#">Miao Liu</a></li>
+                <li><a href="#">Hongxin Zhang</a></li>
+                <li><a href="#">Aryan Pariani</a></li>
+
               </ul>
             </div>
             <div class="mdl-mega-footer--drop-down-section">
               <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Details</h1>
+              <h1 class="mdl-mega-footer--heading">&nbsp;</h1>
               <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">Spec</a></li>
-                <li><a href="#">Tools</a></li>
-                <li><a href="#">Resources</a></li>
+                <li><a href="#">Diyi Yang</a></li>
+                <li><a href="#">Jim Rehg</a></li>
               </ul>
             </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Technology</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">Patterns</a></li>
-                <li><a href="#">Usage</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contracts</a></li>
-              </ul>
-            </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">FAQ</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">Questions</a></li>
-                <li><a href="#">Answers</a></li>
-                <li><a href="#">Contact us</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="mdl-mega-footer--bottom-section">
+<!--            <div class="mdl-mega-footer&#45;&#45;drop-down-section">-->
+<!--              <input class="mdl-mega-footer&#45;&#45;heading-checkbox" type="checkbox" checked>-->
+<!--              <h1 class="mdl-mega-footer&#45;&#45;heading">Technology</h1>-->
+<!--              <ul class="mdl-mega-footer&#45;&#45;link-list">-->
+<!--                <li><a href="#">How it works</a></li>-->
+<!--                <li><a href="#">Patterns</a></li>-->
+<!--                <li><a href="#">Usage</a></li>-->
+<!--                <li><a href="#">Products</a></li>-->
+<!--                <li><a href="#">Contracts</a></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--            <div class="mdl-mega-footer&#45;&#45;drop-down-section">-->
+<!--              <input class="mdl-mega-footer&#45;&#45;heading-checkbox" type="checkbox" checked>-->
+<!--              <h1 class="mdl-mega-footer&#45;&#45;heading">FAQ</h1>-->
+<!--              <ul class="mdl-mega-footer&#45;&#45;link-list">-->
+<!--                <li><a href="#">Questions</a></li>-->
+<!--                <li><a href="#">Answers</a></li>-->
+<!--                <li><a href="#">Contact us</a></li>-->
+<!--              </ul>-->
+<!--            </div>-->
+            <div class="mdl-mega-footer--bottom-section">
             <div class="mdl-logo">
-              More Information
+              Credits
             </div>
             <ul class="mdl-mega-footer--link-list">
-              <li><a href="https://developers.google.com/web/starter-kit/">Web Starter Kit</a></li>
-              <li><a href="#">Help</a></li>
-              <li><a href="#">Privacy and Terms</a></li>
+              <li><a href="https://getmdl.io/templates/index.html">MDL Templates Kit</a></li>
             </ul>
           </div>
+          </div>
+
         </footer>
       </main>
     </div>
-    <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/text-only/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
   </body>
 </html>
