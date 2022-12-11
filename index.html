@@ -48,15 +48,23 @@
       html * {
         font-family: "PT Sans", Calibri, Tahoma, sans-serif;
       }
+      img {
+        height: auto;
+        width: calc(100% - 2.5em);
+        padding: 20px;
+        background-color: white;
+      }
     </style>
     <style>
     .demo-card-image {
-      width: 75%;
-      height: 75%;
+      width: 85%;
+      height: 70%;
       display: block;
-      margin: 30px auto auto;
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
       background: url('images/teaser.png') no-repeat;
-      background-size: contain;
+      background-size: 100% 100%;
     }
     </style>
 <!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">-->
@@ -93,69 +101,8 @@
           <a href="#features" class="mdl-layout__tab"><b>Experiments</b></a>
           <a href="#features" class="mdl-layout__tab"><b>Datasets</b></a>
           <a href="#features" class="mdl-layout__tab"><b>Code & Models</b></a>
-          <a href="#features" class="mdl-layout__tab"><b>FAQ</b></a>
         </div>
       </header>
-<!--      <header class="android-header mdl-layout__header mdl-layout__header&#45;&#45;waterfall">-->
-<!--        <div class="mdl-layout__header-row">-->
-<!--          <span class="android-title mdl-layout-title">-->
-<!--            <img class="android-logo-image" src="images/android-desktop.png">-->
-<!--          </span>-->
-<!--          &lt;!&ndash; Add spacer, to align navigation to the right in desktop &ndash;&gt;-->
-<!--          <div class="android-header-spacer mdl-layout-spacer"></div>-->
-<!--          &lt;!&ndash; Navigation &ndash;&gt;-->
-<!--          <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color&#45;&#45;primary-dark">-->
-<!--            <a href="#overview" class="mdl-layout__tab is-active">Overview</a>-->
-<!--            <a href="#features" class="mdl-layout__tab">Features</a>-->
-<!--            <a href="#features" class="mdl-layout__tab">Details</a>-->
-<!--            <a href="#features" class="mdl-layout__tab">Technology</a>-->
-<!--            <a href="#features" class="mdl-layout__tab">FAQ</a>-->
-<!--            <button class="mdl-button mdl-js-button mdl-button&#45;&#45;fab mdl-js-ripple-effect mdl-button&#45;&#45;colored mdl-shadow&#45;&#45;4dp mdl-color&#45;&#45;accent" id="add">-->
-<!--              <i class="material-icons" role="presentation">add</i>-->
-<!--              <span class="visuallyhidden">Add</span>-->
-<!--            </button>-->
-<!--        </div>-->
-<!--          <span class="android-mobile-title mdl-layout-title">-->
-<!--            <img class="android-logo-image" src="images/android-desktop.png">-->
-<!--          </span>-->
-<!--          <button class="android-more-button mdl-button mdl-js-button mdl-button&#45;&#45;icon mdl-js-ripple-effect" id="more-button">-->
-<!--            <i class="material-icons">more_vert</i>-->
-<!--          </button>-->
-<!--          <ul class="mdl-menu mdl-js-menu mdl-menu&#45;&#45;bottom-right mdl-js-ripple-effect" for="more-button">-->
-<!--            <li class="mdl-menu__item">5.0 Lollipop</li>-->
-<!--            <li class="mdl-menu__item">4.4 KitKat</li>-->
-<!--            <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>-->
-<!--            <li class="mdl-menu__item">Android History</li>-->
-<!--          </ul>-->
-<!--        </div>-->
-<!--      </header>-->
-<!--      <div class="android-drawer mdl-layout__drawer">-->
-<!--        <nav class="mdl-navigation">-->
-<!--          <a class="mdl-navigation__link" href="">Phones</a>-->
-<!--          <a class="mdl-navigation__link" href="">Tablets</a>-->
-<!--          <a class="mdl-navigation__link" href="">Wear</a>-->
-<!--          <a class="mdl-navigation__link" href="">TV</a>-->
-<!--          <a class="mdl-navigation__link" href="">Auto</a>-->
-<!--          <a class="mdl-navigation__link" href="">One</a>-->
-<!--          <a class="mdl-navigation__link" href="">Play</a>-->
-<!--          <div class="android-drawer-separator"></div>-->
-<!--          <span class="mdl-navigation__link" href="">Versions</span>-->
-<!--          <a class="mdl-navigation__link" href="">Lollipop 5.0</a>-->
-<!--          <a class="mdl-navigation__link" href="">KitKat 4.4</a>-->
-<!--          <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>-->
-<!--          <a class="mdl-navigation__link" href="">Android history</a>-->
-<!--          <div class="android-drawer-separator"></div>-->
-<!--          <span class="mdl-navigation__link" href="">Resources</span>-->
-<!--          <a class="mdl-navigation__link" href="">Official blog</a>-->
-<!--          <a class="mdl-navigation__link" href="">Android on Google+</a>-->
-<!--          <a class="mdl-navigation__link" href="">Android on Twitter</a>-->
-<!--          <div class="android-drawer-separator"></div>-->
-<!--          <span class="mdl-navigation__link" href="">For developers</span>-->
-<!--          <a class="mdl-navigation__link" href="">App developer resources</a>-->
-<!--          <a class="mdl-navigation__link" href="">Android Open Source Project</a>-->
-<!--          <a class="mdl-navigation__link" href="">Android SDK</a>-->
-<!--        </nav>-->
-<!--      </div>-->
       <main class="mdl-layout__content">
         <div class="mdl-layout__tab-panel is-active" id="overview">
           <div class="android-be-together-section mdl-typography--text-center">
@@ -181,7 +128,7 @@
             </div>
           </section>
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="mdl-card mdl-cell mdl-cell--12-col-desktop">
               <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
                 <h4 class="mdl-cell mdl-cell--12-col">Data Sources</h4>
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
@@ -275,55 +222,59 @@
 </section>
         </div>
         <div class="mdl-layout__tab-panel" id="features">
-          <section class="section--center mdl-grid mdl-grid--no-spacing">
-            <div class="mdl-cell mdl-cell--12-col">
-              <h4>Features</h4>
-              <ul class="toc">
-                <h4>Contents</h4>
-                <a href="#lorem1">Lorem ipsum</a>
-                <a href="#lorem3">Lorem ipsum</a>
-                <a href="#lorem4">Lorem ipsum</a>
-                <a href="#lorem5">Lorem ipsum</a>
-              </ul>
-
-              <h5 id="lorem1">Lorem ipsum dolor sit amet</h5>
-              Excepteur et pariatur officia veniam anim culpa cupidatat consequat ad velit culpa est non.
-              <ul>
-                <li>Nisi qui nisi duis commodo duis reprehenderit consequat velit aliquip.</li>
-                <li>Dolor consectetur incididunt in ipsum laborum non et irure pariatur excepteur anim occaecat officia sint.</li>
-                <li>Lorem labore proident officia excepteur do.</li>
-              </ul>
-
-              <p>
-                Sit qui est voluptate proident minim cillum in aliquip cupidatat labore pariatur id tempor id. Proident occaecat occaecat sint mollit tempor duis dolor cillum anim. Dolore sunt ea mollit fugiat in aliqua consequat nostrud aliqua ut irure in dolore. Proident aliqua culpa sint sint exercitation. Non proident occaecat reprehenderit veniam et proident dolor id culpa ea tempor do dolor. Nulla adipisicing qui fugiat id dolor. Nostrud magna voluptate irure veniam veniam labore ipsum deserunt adipisicing laboris amet eu irure. Sunt dolore nisi velit sit id. Nostrud voluptate labore proident cupidatat enim amet Lorem officia magna excepteur occaecat eu qui. Exercitation culpa deserunt non et tempor et non.
-              </p>
-              <p>
-                Do dolor eiusmod eu mollit dolore nostrud deserunt cillum irure esse sint irure fugiat exercitation. Magna sit voluptate id in tempor elit veniam enim cupidatat ea labore elit. Aliqua pariatur eu nulla labore magna dolore mollit occaecat sint commodo culpa. Eu non minim duis pariatur Lorem quis exercitation. Sunt qui ex incididunt sit anim incididunt sit elit ad officia id.
-              </p>
-              <p id="lorem2">
-                Tempor voluptate ex consequat fugiat aliqua. Do sit et reprehenderit culpa deserunt culpa. Excepteur quis minim mollit irure nulla excepteur enim quis in laborum. Aliqua elit voluptate ad deserunt nulla reprehenderit adipisicing sint. Est in eiusmod exercitation esse commodo. Ea reprehenderit exercitation veniam adipisicing minim nostrud. Veniam dolore ex ea occaecat non enim minim id ut aliqua adipisicing ad. Occaecat excepteur aliqua tempor cupidatat aute dolore deserunt ipsum qui incididunt aliqua occaecat sit quis. Culpa sint aliqua aliqua reprehenderit veniam irure fugiat ea ad.
-              </p>
-              <p>
-                Eu minim fugiat laborum irure veniam Lorem aliqua enim. Aliqua veniam incididunt consequat irure consequat tempor do nisi deserunt. Elit dolore ad quis consectetur sint laborum anim magna do nostrud amet. Ea nulla sit consequat quis qui irure dolor. Sint deserunt excepteur consectetur magna irure. Dolor tempor exercitation dolore pariatur incididunt ut laboris fugiat ipsum sunt veniam aute sunt labore. Non dolore sit nostrud eu ad excepteur cillum eu ex Lorem duis.
-              </p>
-              <p>
-                Id occaecat velit non ipsum occaecat aliqua quis ut. Eiusmod est magna non esse est ex incididunt aute ullamco. Cillum excepteur sint ipsum qui quis velit incididunt amet. Qui deserunt anim enim laborum cillum reprehenderit duis mollit amet ad officia enim. Minim sint et quis aliqua aliqua do minim officia dolor deserunt ipsum laboris. Nulla nisi voluptate consectetur est voluptate et amet. Occaecat ut quis adipisicing ad enim. Magna est magna sit duis proident veniam reprehenderit fugiat reprehenderit enim velit ex. Ullamco laboris culpa irure aliquip ad Lorem consequat veniam ad ipsum eu. Ipsum culpa dolore sunt officia laborum quis.
-              </p>
-
-              <h5 id="lorem3">Lorem ipsum dolor sit amet</h5>
-
-              <p id="lorem4">
-                Eiusmod nulla aliquip ipsum reprehenderit nostrud non excepteur mollit amet esse est est dolor. Dolore quis pariatur sit consectetur veniam esse ullamco duis Lorem qui enim ut veniam. Officia deserunt minim duis laborum dolor in velit pariatur commodo ullamco eu. Aute adipisicing ad duis labore laboris do mollit dolor cillum sunt aliqua ullamco. Esse tempor quis cillum consequat reprehenderit. Adipisicing proident anim eu sint elit aliqua anim dolore cupidatat fugiat aliquip qui.
-              </p>
-              <p id="lorem5">
-                Nisi eiusmod esse cupidatat excepteur exercitation ipsum reprehenderit nostrud deserunt aliqua ullamco. Anim est irure commodo eiusmod pariatur officia. Est dolor ipsum excepteur magna aliqua ad veniam irure qui occaecat eiusmod aute fugiat commodo. Quis mollit incididunt amet sit minim velit eu fugiat voluptate excepteur. Sit minim id pariatur ex cupidatat cupidatat nostrud nostrud ipsum.
-              </p>
-              <p>
-                Enim ea officia excepteur ad veniam id reprehenderit eiusmod esse mollit consequat. Esse non aute ullamco Lorem aliqua qui dolore irure eiusmod aute aliqua proident labore aliqua. Ipsum voluptate voluptate exercitation laborum deserunt nulla elit aliquip et minim ex veniam. Duis cupidatat aute sunt officia mollit dolor ad elit ad aute labore nostrud duis pariatur. In est sint voluptate consectetur velit ea non labore. Ut duis ea aliqua consequat nulla laboris fugiat aute id culpa proident. Minim eiusmod laboris enim Lorem nisi excepteur mollit voluptate enim labore reprehenderit officia mollit.
-              </p>
-              <p>
-                Cupidatat labore nisi ut sunt voluptate quis sunt qui ad Lorem esse nisi. Ex esse velit ullamco incididunt occaecat dolore veniam tempor minim adipisicing amet. Consequat in exercitation est elit anim consequat cillum sint labore cillum. Aliquip mollit laboris ad labore anim.
-              </p>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                <h4>Experiments - Context Length</h4>
+                We report average F-1 score results achieved for persuasion strategy prediction by every Base model with no previous context and the corresponding context model Base + C with different context lengths of 1, 3, 5, 7 and 9 previous utterances.
+              </div>
+              <div class="mdl-card__media">
+                <img src="images/context_ablation-1.png">
+            </div>
+            </div>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                <h4>Experiments - Video Features</h4>
+                We report average F-1 score results for each subset of our dataset, achieved by our models for Base, context model Base + C, video model Base + V, and Base + C + V incorporating both video and context.
+              </div>
+              <div class="mdl-card__media">
+                <img src="images/video%20features%20experiment%20results.png">
+            </div>
+            </div>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                <h4>Experiments - Data Source Domain Generalization </h4>
+                We report average F-1 score results achieved by Base and context-based Base + C models trained on the much larger YouTube subset but tested on Ego4D subset without and after fine-tuning on Ego4D.
+              </div>
+              <div class="mdl-card__media">
+                <img src="images/data%20domain%20gen.png">
+            </div>
+            </div>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                <h4>Experiments - Game Domain Generalization</h4>
+                We report average F-1 score results achieved by Base and context-based Base + C models trained on data for <i>Werewolf</i> games but tested on games of <i>The Resistance: Avalon</i>, a vastly different social deduction game.
+              </div>
+              <div class="mdl-card__media">
+                <img src="images/game%20domain%20gen.png">
+            </div>
+            </div>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                <h4>Experiments - Off-the-shelf GPT-3 Inference</h4>
+                We report average F-1 score results of experiments with OpenAI’s few-shot GPT-3 model on Ego4D and YouTube subsets under three learning settings: zero-shot, one-shot and five-shot.
+              </div>
+              <div class="mdl-card__media">
+                <img src="images/gpt%20experiment%20results.png">
+            </div>
             </div>
           </section>
         </div>
@@ -351,26 +302,6 @@
                 <li><a href="#">Diyi Yang</a></li>
               </ul>
             </div>
-<!--            <div class="mdl-mega-footer&#45;&#45;drop-down-section">-->
-<!--              <input class="mdl-mega-footer&#45;&#45;heading-checkbox" type="checkbox" checked>-->
-<!--              <h1 class="mdl-mega-footer&#45;&#45;heading">Technology</h1>-->
-<!--              <ul class="mdl-mega-footer&#45;&#45;link-list">-->
-<!--                <li><a href="#">How it works</a></li>-->
-<!--                <li><a href="#">Patterns</a></li>-->
-<!--                <li><a href="#">Usage</a></li>-->
-<!--                <li><a href="#">Products</a></li>-->
-<!--                <li><a href="#">Contracts</a></li>-->
-<!--              </ul>-->
-<!--            </div>-->
-<!--            <div class="mdl-mega-footer&#45;&#45;drop-down-section">-->
-<!--              <input class="mdl-mega-footer&#45;&#45;heading-checkbox" type="checkbox" checked>-->
-<!--              <h1 class="mdl-mega-footer&#45;&#45;heading">FAQ</h1>-->
-<!--              <ul class="mdl-mega-footer&#45;&#45;link-list">-->
-<!--                <li><a href="#">Questions</a></li>-->
-<!--                <li><a href="#">Answers</a></li>-->
-<!--                <li><a href="#">Contact us</a></li>-->
-<!--              </ul>-->
-<!--            </div>-->
             <div class="mdl-mega-footer--bottom-section">
             <div class="mdl-logo">
               Credits

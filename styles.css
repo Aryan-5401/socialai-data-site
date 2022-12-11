@@ -88,6 +88,7 @@ html, body {
   color: inherit;
   width: calc(100% - 80px);
 }
+
 .mdl-demo.mdl-demo .mdl-card__supporting-text h4 {
   margin-top: 0;
   margin-bottom: 20px;
@@ -133,10 +134,10 @@ html, body {
   margin-bottom: 48px;
 }
 .mdl-demo section.section--center {
-  max-width: 860px;
+  max-width: 900px;
 }
 .mdl-demo #features section.section--center {
-  max-width: 620px;
+  max-width: 900px;
 }
 h4 {
   font-family: "PT Sans", Calibri, Tahoma, sans-serif;
@@ -411,7 +412,7 @@ h4 {
 
 .android-be-together-section {
   position: relative;
-  height: 800px;
+  height: 930px;
   width: auto;
   background-color: #f3f3f3;
   background-size: cover;
