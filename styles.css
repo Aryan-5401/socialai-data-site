@@ -94,7 +94,7 @@ html, body {
   margin-bottom: 20px;
   font-style: normal;
   font-weight: 700;
-  color: #339966;
+  color: #8C1515;
   font-size: 28px
 }
 
@@ -108,7 +108,7 @@ html, body {
   color: inherit;
 }
 .mdl-demo .mdl-card__actions a {
-  color: #00BCD4;
+  color: #8C1515;
   margin: 0;
 }
 .mdl-demo .mdl-card__actions a:hover,
@@ -153,8 +153,23 @@ h4 {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+.mdl-layout__tab {
+  font-weight: 700;
+  font-size: 16px;
+  color: black;
+}
+
+.mdl-layout.is-upgraded .mdl-layout__tab.is-active {
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+}
+
 .mdl-demo section > .section__play-btn {
   min-height: 200px;
+  background-color: #8C1515;
+  color: #8C1515;
 }
 .mdl-demo section > header > .material-icons {
   font-size: 3rem;
@@ -428,7 +443,7 @@ h4 {
 .android-slogan {
   font-size: 60px;
   padding-top: 30px;
-  color: #339966;
+  color: #8C1515;
 }
 
 .android-sub-slogan {
