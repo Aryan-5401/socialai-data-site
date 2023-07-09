@@ -72,6 +72,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="custom-material-design-lite.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./js/fontawesome.all.min.js"></script>
     <style>
     #view-source {
       position: fixed;
@@ -97,17 +100,71 @@
 <!--        </div>-->
         <div class="android-header-spacer mdl-layout-spacer"></div>
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark" style="display: flex; justify-content: space-around">
-          <a href="#overview" class="mdl-layout__tab is-active"><b>Overview</b></a>
+          <a href="#overview" class="mdl-layout__tab is-active"><b>Home</b></a>
           <a href="#experiments" class="mdl-layout__tab"><b>Experiments</b></a>
-          <a href="#datasets" class="mdl-layout__tab"><b>Datasets</b></a>
-          <a href="#code_models" class="mdl-layout__tab"><b>Code & Models</b></a>
+          <!-- <a href="#datasets" class="mdl-layout__tab"><b>Datasets</b></a>
+          <a href="#code_models" class="mdl-layout__tab"><b>Code & Models</b></a> -->
         </div>
       </header>
       <main class="mdl-layout__content">
         <div class="mdl-layout__tab-panel is-active" id="overview">
           <div class="android-be-together-section mdl-typography--text-center">
-            <div class="logo-font android-slogan"> <b> Persuasion Strategies for Multiplayer Social Deduction Games </b></div>
-          <div class="logo-font android-sub-slogan"> <i>The first multimodal benchmark dataset for modeling persuasive behaviors during social deduction games.</i>  </div>
+            <div class="logo-font android-slogan"> <b> Werewolf Among Us: Modeling Persuasion Behaviors in Social Deduction Games </b></div>
+            <div class="mdl-card__supporting-text" style="height: 50px;">
+            <span class="link-block">
+              <a href="https://arxiv.org/abs/2212.08279"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>arXiv</span>
+              </a>
+            </span>
+            <!-- Video Link. -->
+<!--               <span class="link-block">
+              <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-youtube"></i>
+                </span>
+                <span>Video</span>
+              </a>
+            </span> -->
+
+            <!-- Code Link. -->
+            <span class="link-block">
+              <a href="https://github.com/Icefoxzhx/PersuationGames_archive"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span>Code & Models</span>
+                </a>
+            </span>
+
+            <!-- Data Link. -->
+            <span class="link-block">
+              <a href="https://drive.google.com/drive/folders/1N4PymMbKXFzqy3fq4ZGjdrc0oiScV914?usp=sharing"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fa fa-database" aria-hidden="true"></i>
+                </span>
+                <span>Datasets</span>
+                </a>
+            </span>
+
+            <!-- Model Link. -->
+            <!-- <span class="link-block">
+              <a href="https://huggingface.co/models?sort=downloads&search=salt-nlp%20value"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fa fa-cloud" aria-hidden="true"></i>
+                </span>
+                <span>Trained Models</span>
+                </a>
+          </span> -->
+          <br><br><br></div>
+            <div class="logo-font android-sub-slogan"> <i>The first multimodal benchmark dataset for modeling persuasive behaviors during social deduction games.</i>  </div>
           <div class="demo-card-image"></div>
         </div>
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
@@ -117,13 +174,66 @@
             <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
               <div class="mdl-card__supporting-text">
                 <h4>About</h4>
-                This project presents the first multimodal dataset for persuasion strategy modeling, composed of video captures and dialogue transcriptions and collected in natural social scenarios including intensive in-person conversations of multiple players engaged in social deduction games like <i>One Night Ultimate Werewolf</i>. The dataset is annotated with appropriate persuasion strategies for every utterance in every game dialog and the voting outcomes of each game as an evidence of human's belief. We also implement and present comprehensive experiments of persuasion strategy prediction and voting outcome deduction.
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2212.08279"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+    <!--               <span class="link-block">
+                  <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span> -->
+    
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/Icefoxzhx/PersuationGames_archive"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code & Models</span>
+                    </a>
+                </span>
+    
+                <!-- Data Link. -->
+                <span class="link-block">
+                  <a href="https://drive.google.com/drive/folders/1N4PymMbKXFzqy3fq4ZGjdrc0oiScV914?usp=sharing"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fa fa-database" aria-hidden="true"></i>
+                    </span>
+                    <span>Datasets</span>
+                    </a>
+                </span>
+    
+                <!-- Model Link. -->
+                <!-- <span class="link-block">
+                  <a href="https://huggingface.co/models?sort=downloads&search=salt-nlp%20value"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fa fa-cloud" aria-hidden="true"></i>
+                    </span>
+                    <span>Trained Models</span>
+                    </a>
+              </span> -->
+              <br><br>
+              This project presents the first multimodal dataset for persuasion strategy modeling, composed of video captures and dialogue transcriptions and collected in natural social scenarios including intensive in-person conversations of multiple players engaged in social deduction games like <i>One Night Ultimate Werewolf</i>. The dataset is annotated with appropriate persuasion strategies for every utterance in every game dialog and the voting outcomes of each game as an evidence of human's belief. We also implement and present comprehensive experiments of persuasion strategy prediction and voting outcome deduction.
               </div>
               <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Watch Video</a>
+                <a class="mdl-button">Watch Video</a>
               </div>
               <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Read The Paper</a>
+                <a href="https://arxiv.org/abs/2212.08279" class="mdl-button">Read The Paper</a>
               </div>
             </div>
           </section>
@@ -188,26 +298,48 @@
             </div>
           </section>
           <section class="section--footer mdl-color--white mdl-grid">
-              <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+              <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone" style="width: 40px;">
 		<div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
               </div>
               <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-		<h4>Data Agreement</h4>
+                <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <h4 class="mdl-cell mdl-cell--12-col">Data Agreement</h4>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                “I will not use this dataset for malicious purposes including not limited to):
+                deception, impersonation, mockery, discrimination, hate speech, targeted harassment and cultural appropriation.
 
-<!--<pre class="language-markup">-->
-<!--  <code class="language-markup">“I will not use Multi-VALUE for malicious purposes including  not limited to):-->
-<!--    deception, impersonation, mockery, discrimination, hate speech, targeted harassment and cultural appropriation.-->
+                In my use of this resource, I will respect the dignity and privacy of all people.”</div>
 
-<!--    In my use of this resource, I will respect the dignity and privacy of all people.”</code>-->
-<!--</pre>-->
+</div>
 <it>
 </it>
 </div>
-<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone"  style="width: 40px;">
   <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
 </div>
 <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-  <h4>How To Cite</h4>
+  <div class="mdl-card__supporting-text">
+  <h4 class="mdl-cell mdl-cell--12-col">How To Cite</h4>
+  <button onclick="copyText()">&#9986; &#65039;Copy to Clipboard</button><br><span id='clicked' style='display: none;'>copied</span><br>     
+								<pre class="language-markup">
+								  <code class="language-markup">@misc{lai2022werewolf,
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title = {Werewolf Among Us: A Multimodal Dataset for Modeling &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Persuasion Behaviors in Social Deduction Games},
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author = {Bolin Lai and 
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hongxin Zhang and 
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Miao Liu and 
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aryan Pariani and 
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fiona Ryan and 
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wenqi Jia and 
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shirley Anugrah Hayati and 
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;James M. Rehg and 
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Diyi Yang},
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;year = {2022},
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;eprint = {2212.08279},
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;archivePrefix = {arXiv},
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;primaryClass = {cs.LG}
+                    }
+                  </code>
+								</pre>
 <!--<pre class="language-markup">-->
 <!--  <code class="language-markup">@inproceedings{ziems-etal-2022-multi-value,-->
 <!--    title = "Multi-VALUE: Evaluating Cross-dialectal NLP",-->
@@ -218,6 +350,7 @@
 <!--    Yang, Diyi"-->
 <!--    }</code>-->
 <!--</pre>-->
+</div>
 </div>
 </section>
         </div>
@@ -293,24 +426,23 @@
             <div class="mdl-mega-footer--drop-down-section">
               <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
               <h1 class="mdl-mega-footer--heading">Team</h1>
-<!--              <ul class="mdl-mega-footer&#45;&#45;link-list">-->
-<!--                <li><a href="#">Bolin Lai</a></li>-->
-<!--                <li><a href="#">Hongxin Zhang</a></li>-->
-<!--                <li><a href="#">Miao Liu</a></li>-->
-<!--                <li><a href="#">Aryan Pariani</a></li>-->
-
-<!--              </ul>-->
+              <ul class="mdl-mega-footer&#45;&#45;link-list">
+                <li><a>Bolin Lai</a></li>
+                <li><a>Hongxin Zhang</a></li>
+                <li><a>Miao Liu</a></li>
+                <li><a>Aryan Pariani</a></li>
+              </ul>
             </div>
             <div class="mdl-mega-footer--drop-down-section">
               <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
               <h1 class="mdl-mega-footer--heading">&nbsp;</h1>
-<!--              <ul class="mdl-mega-footer&#45;&#45;link-list">-->
-<!--                <li><a href="#">Fiona Ryan</a></li>-->
-<!--                <li><a href="#">Wenqi Jia</a></li>-->
-<!--                <li><a href="#">Shirley Anugrah Hayati</a></li>-->
-<!--                <li><a href="#">James M. Rehg</a></li>-->
-<!--                <li><a href="#">Diyi Yang</a></li>-->
-<!--              </ul>-->
+              <ul class="mdl-mega-footer&#45;&#45;link-list">
+                <li><a>Fiona Ryan</a></li>
+                <li><a>Wenqi Jia</a></li>
+                <li><a>Shirley Anugrah Hayati</a></li>
+                <li><a>James M. Rehg</a></li>
+                <li><a>Diyi Yang</a></li>
+              </ul>
             </div>
             <div class="mdl-mega-footer--bottom-section">
             <div class="mdl-logo">
